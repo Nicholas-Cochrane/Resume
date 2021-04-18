@@ -1,0 +1,105 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+
+% !TeX program = lualatex
+
+\documentclass[]{mcdowellcvcustom}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+
+%for left center right alignment
+\newcommand{\headerline}[3]{%
+	\par\medskip\noindent
+	\makebox[0pt][l]{\texttt{#1}}%
+	\makebox[\textwidth][c]{#2}%
+	\makebox[0pt][r]{\texttt{#3}}\par\medskip}
+
+% Set applicant's personal data for header
+\name{Nicholas Cochrane}
+\address{8610 N. Cedar Ave. Apt 203 \linebreak Fresno, California}
+\contacts{(559) 676-7957 \linebreak nicholascochrane.dev@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	\headerline{linkedin.com/in/nicholas-cochrane-dev}{ }{github.com/Nicholas-Cochrane}
+	
+	% Print the content
+	\begin{cvsection}{Employment\slash Experience}
+		\begin{cvsubsection}{High School IT Support}{Minarets High School}{August 2014 - June 2015}			
+			\begin{itemize}
+				\item Volunteered working for high schools IT support team. 
+				\item Computer repair, Computer imaging, Tech support
+			\end{itemize}
+		\end{cvsubsection}
+		\vspace{2mm}
+		\begin{cvsubsection}{Computer Repair and Imaging}{Minarets High School}{Summer 2015}			
+			\begin{itemize}
+				\item Summer Job at Minarets High School repairing and re-imaging laptops for the next school year.
+			\end{itemize}
+		\end{cvsubsection}
+
+	\end{cvsection}
+	
+	\vspace{10mm}
+	
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Fresno, CA}{California State University, Fresno}{August 2015 -- May 2020}
+			\begin{itemize}
+				\item Graduated Spring 2020 
+				\item B.S. in Computer Science. GPA: 3.90
+				\item Undergraduate Coursework: Operating Systems; Databases; Big Data Analysis and Data Mining; Algorithms; Reinforcement Learning; Calculus II; Computer Graphics.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\vspace{10mm}
+	
+	\begin{cvsection}{Technical Experience}
+		\begin{cvsubsection}{Projects}{}{}
+			\begin{itemize}
+				\item \textbf{Roguelike} (2019). Collaborative project; A Roguelike 2D Game using OpenGL.  C++, OpenGL, Glut, SOIL
+				\item \textbf{Reversi Website} (2019). Working game site with login, online saving, reloading, AI opponents and high score Tracking.  HTML, CSS, JavaScript, jQuery, PHP, Ajax, SQL
+				\item \textbf{Pattern Analysis for Transaction Fraud Detection} (2020). Data Analysis paper examining the patterns of transaction fraud in large data sets. Currently in progresses to be published in IEEE CCWC 2021. \LaTeX, Python, Numpy, Pandas, Matplotlib
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\vspace{10mm}
+
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item HTML; CSS; JavaScript; JSON; PHP; Ajax
+				\item SQL (mySQL); Hadoop; Spark
+				\item C++; C\#; OpenGL; Glut; XML (XSD); Python (Numpy, Pandas, Matplotlib); \LaTeX ; 
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
